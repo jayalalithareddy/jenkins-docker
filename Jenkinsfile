@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t aswin/jenkins-docker-hub .'
+        sh 'docker build -t aswin/jenkins-docker-hub'
       }
     }
     stage('Login') {
