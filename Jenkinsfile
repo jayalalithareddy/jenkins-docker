@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t aswin19/jenkins-docker-hub .'
+        sh 'docker build -t aswin/jenkins-docker-hub .'
       }
     }
     stage('Login') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push aswin19/jenkins-docker-hub'
+        sh 'docker push aswin/jenkins-docker-hub'
       }
     }
   }
